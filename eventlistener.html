@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events listener</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    
+    <button id="btn">Show Date</button>
+    <button id="btn2">Show Date</button>
+    <button id="btn3">Calculate</button>
+    <script>
+       
+    let text = true;
+    document.getElementById('btn').addEventListener("click",toggle)
+    function toggle(){
+        if(text){
+            date();
+        }
+        else{
+            hidedate();
+        }
+    }
+    function date(){
+        document.getElementById('demo').innerHTML = Date();
+        document.getElementById('demo').style.display = "block";
+        document.getElementById('btn').innerHTML = "Hide Date";
+        text = false;
+        
+    }
+    function hidedate(){
+        document.getElementById('demo').style.display = "none";
+        document.getElementById('btn').innerHTML = "Show Date";
+        text = true;
+
+
+    }
+    document.getElementById('btn2').addEventListener("click",function(){alert("hi")});
+    let a = 5;
+    let b = 2;
+    document.getElementById('btn3').addEventListener("click",function (){add(a,b)});
+    function add(x,y){
+        let c = x+y;
+        document.getElementById('demo3').innerHTML = c;
+    }
+    </script>
+</body>
+</html>

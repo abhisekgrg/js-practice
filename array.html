@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let a = ["a","b","c"];
+        document.write(a);
+        document.write("<br>");
+        document.write(a[0]);
+        document.write("<br>");
+        const array = ["abc","efg","ghi"];
+        document.write(array);
+        document.write("<br>");
+        const person = {name:"abhisek",address:"chanauli",age:23}
+        document.write(person.name);
+        document.write(person.address);
+        document.write(person.age);
+        document.write("<br>");
+        document.write(Date());
+
+        document.write("<br>");
+        document.write("<br>");
+//lopping in array
+        const bike = ["Bullet","NS","Pulsar","Splender"];
+       
+        for (let i = 0;i<bike.length;i++){
+            document.write(bike[i]);
+            document.write("<br>");
+        }
+        document.write("<br>");
+        document.write("<br>");
+//foreach
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+let text = "<ul>";
+fruits.forEach(myFunction);
+
+
+document.write(text);
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+} 
+
+    </script>
+</body>
+</html>

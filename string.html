@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <br>
+    <h1 id="demo2"></h1>
+    <script>
+        let a = "Abhisek";
+        let b = "Abhisekh";
+        document.write(a==b);
+        document.write('<br>');
+        document.write(a.length);
+        document.write('<br>');
+        document.write(a.charAt(0));
+        document.write('<br>');
+        document.write(a.at(1));
+        document.write(a[2]);
+        document.write(a==b);
+        document.write('<br>');
+
+  
+
+        document.write(a===b);
+        document.write('<br>');
+        document.write('<br>');
+        let x = "Apple, Banana, Mango";
+        document.write(x.slice(7,13));
+        document.write('<br>');
+
+        document.write(x.substring(7,6));
+        document.write('<br>');
+        document.write(x.slice(7));
+        document.write('<br>');
+        document.write('<br>');
+        document.write('<br>');
+        let string = "abhisek";
+        let string2 = "gurung";
+        document.write(string.toLocaleUpperCase());
+        document.write('<br>');
+        document.write(string.concat(" ",string2));
+        document.write('<br>');
+        document.write(string+" "+string2);
+        document.getElementById("demo").innerHTML = string.concat(" ",string2);
+        document.getElementById("demo2").innerHTML = string+ " "+string2;
+        document.write('<br>');
+        let str = 5;
+        let strs = str.toString();
+        document.write(strs.padStart(4,0));
+      
+
+    </script>
+</body>
+</html>
